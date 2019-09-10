@@ -1,0 +1,45 @@
+.how-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $bcg;
+    &_title {
+        color: $title;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        @include proximaReg;
+    }
+    &_items {
+        text-align: center;
+        margin-top: 100px;
+        .items-question {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+            color: $title;
+            letter-spacing: 0.16px;
+            @include proximaReg;
+            &_top {
+                margin-top: 55px;
+            }
+            &_bold {
+                @include proximaExtra;
+                font-weight: 700;
+            }
+        }
+        .image-services {
+            margin-top: 12px;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .how-services {
+        padding-top: 50px;  
+        padding-bottom: 50px;
+        &_items {
+            margin-top: 50px;
+        }
+    }
+}

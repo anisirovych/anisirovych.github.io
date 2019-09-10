@@ -1,0 +1,25 @@
+.tariff {
+    padding-top: 100px;
+    background-color: $bcg;
+    &-title {
+        font-size: 30px;
+        color: #000000;
+        font-weight: 600;
+        letter-spacing: 2px;
+        @include mullerMed;
+        margin-bottom: 35px;
+    }
+    &-section {
+        color: $text-black;
+        font-size: 18px;
+        font-weight: 500;
+        @include mullerMed;
+    }
+    &-choose {
+        margin-top: 50px;
+        font-size: 16px;
+        color: #3e3e3e;
+        font-weight: 600;
+        @include mullerLight;
+    }
+}

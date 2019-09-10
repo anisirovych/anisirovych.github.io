@@ -1,0 +1,17 @@
+.footer {
+    background-color: $footer;
+    padding-top: 34px;
+    padding-bottom: 47px;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .kangaroo {
+            color: #ffffff;
+            font-size: 13px;
+            @include mullerLight;
+            margin-right: 25px;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.main {
+    background: url(../img/header/main-bg.jpg) top center no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    &-wrap {
+        padding-top: 120px;
+        line-height: 50px;
+        color: #ffffff; 
+        font-size: 32px;
+        &_ticket {
+            @include proximaReg;
+            font-weight: 700;
+        }
+        &_lawyer {
+            @include proximaExtra;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }  
+    &-lawyer {
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        @include proximaLight;
+        margin-top: 55px;
+        font-weight: 300;
+        &_advogrand {
+            .advogrand-bold {
+                @include proximaExtra;
+                font-weight: 700;
+            }
+        }
+    }
+    &-btn {
+        margin-top: 60px;
+        font-size: 18px;
+        font-weight: 700;
+        @include proximaLight;
+        color: #ffffff;
+        background-color: $red-border;
+        border: 1px solid $red-border;
+        border-radius: 5px;
+        padding: 20px 40px;
+        margin-bottom: 125px;
+        transition: all .3s;
+    }
+}
+@media(max-width: 576px) { 
+    .main {
+        &-wrap {
+            padding-top: 70px;
+            line-height: 40px;
+            color: #ffffff; 
+            font-size: 28px;
+            &_ticket {
+                @include proximaReg;
+                font-weight: 700;
+                font-size: 24px;
+            }
+            &_lawyer {
+                @include proximaExtra;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        } 
+        &-btn {
+            font-size: 16px;
+            border-radius: 5px;
+            padding: 18px 35px;
+            margin-bottom: 125px;
+            transition: all .3s;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .main {
+        &-wrap {
+            padding-top: 60px;
+        }
+        &-btn {
+            
+            margin-bottom: 30px;
+        }
+    }
+}  

@@ -1,0 +1,108 @@
+.consultation {
+    background: url(../img/consultation/const-bg.jpg) top center no-repeat;
+    padding-top: 100px;
+    min-height: 470px;
+    &-free {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        @include mullerMed;
+    }
+    .const-free {
+        margin-bottom: 60px;
+    }
+    &-list_item {
+        font-size: 18px;
+        color: #ffffff;
+        @include mullerLight;
+        &--margin {
+            margin-bottom: 30px;
+            &_left {
+                margin-left: 21px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        .list-num {
+            color: #922c2e;
+            @include mullerMed;
+        }
+        .reworld {
+            text-decoration: underline;
+        }
+        .list-none {
+            display: none;
+        }
+    }
+    .break-consultation {
+        margin-left: 30px;
+    }
+    &-download {
+        margin-top: -100px;
+        .google-play {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media(max-width: 992px) {
+    .consultation {
+        padding-top: 20px;
+        margin-bottom: 0px;
+        .const-free {
+            margin-bottom: 10px;
+        }
+        &-download {
+            display: flex;
+            margin-top: 40px;
+            .google-play {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+@media(max-width: 568px) {
+    .consultation {
+        &-free {
+            font-size: 25px;
+        }
+        &-list_item {
+            font-size: 15px;
+            &--margin {
+                margin-bottom: 10px;
+            }
+        }
+        &-download {
+            flex-direction: column;
+            margin-top: 10px;
+        }
+    }
+}
+@media(max-width: 480px) { 
+    .consultation {
+        &-free {
+            font-size: 20px;
+        }
+        &-list_item {
+            font-size: 14px;
+            &--margin {
+                display: inline-block;
+                margin-bottom: 10px;
+                &_left {
+                    display: none;
+                }
+            }
+            .list-none {
+                display: block;
+            }
+        }
+        &-download {
+            flex-direction: column;
+            margin-top: 10px;
+            .google-play {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
